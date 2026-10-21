@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tomcat-visual: Apache Tomcat explained as Ravi's restaurant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <h1>Ravi's restaurant<small>Apache Tomcat, step by step</small></h1>
+    <div class="ctrl">
+      <button id="auto" type="button" aria-pressed="false">Auto-play</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <ol id="steps" class="steps"></ol>
+    <section class="legend"><h2>Moving objects</h2><ul id="legend"></ul></section>
+  </aside>
+  <main class="main">
+    <div class="wrap"><svg id="stage" viewBox="0 0 1100 620" role="img" aria-label="Animated diagram of Apache Tomcat"></svg></div>
+    <article class="cap" aria-live="polite">
+      <h2 id="c-title"></h2>
+      <div class="grid">
+        <div><h3>In plain words</h3><p id="c-plain"></p></div>
+        <div><h3>Technical name</h3><p id="c-tech"></p></div>
+        <div><h3>Watch the picture</h3><p id="c-watch"></p></div>
+      </div>
+    </article>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
